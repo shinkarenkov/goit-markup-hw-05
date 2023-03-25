@@ -492,7 +492,7 @@ background-image: url(../images/astronaut.svg);
 
 .link-gallery{
     display: block;
-    transition: box-shadow var(--transform) ;
+    transition: box-shadow var(--transform), transform var(--transform) ;
 }
 
 .link-gallery:hover,
@@ -504,6 +504,41 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border-top: none;
     padding: 32px 0 32px 16px;
 }
+
+ .overlay-text {
+     position: absolute;
+     transform: translateY(100%);
+     transition: transform var(--transform);
+     top: 0;
+     left: 0;
+
+
+     background-color: var(--accent-color);
+     width: 100%;
+     height: 100%;
+
+     padding-top: 40px;
+     padding-left: 32px;
+     padding-right: 32px;
+
+     overflow: auto;
+     color: var(--fotter-span);
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.02em;
+ }
+
+ .link-gallery:hover .overlay-text,
+ .link-gallery:focus .overlay-text {
+     transform: translateY(0);
+ }
+
+ .gallery-overlay {
+     position: relative;
+     overflow: hidden;
+ }
 
 /* style footer */
 
