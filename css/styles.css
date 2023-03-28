@@ -674,7 +674,7 @@ right: 24px;
     fill: var(--standart-wite);
 }
 
-.bakcdrop.is-hidden{
+.is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
